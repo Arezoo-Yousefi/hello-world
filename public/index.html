@@ -6,9 +6,28 @@
         <script src="./index.js"></script>
     </head>
     <body>
-        <p id="messages" class="messages"></p>
-        <label for="message">Enter your message:</label>
-        <input type = "text" id="message" name="message" placeholder="Enter a message"/>
-        <button type="submit" onclick="return sendMessage()">Send</button>
+        <div id="hidden1">
+            <fieldset>
+                <label for="userName">please register your name:</label>
+                <input type="text" name="userName" placeholder="enter your name" id="userName"/>
+                <button type="submit" onclick="return submitName()">register</button>
+            </fieldset>
+        </div>
+        <div id="hidden2" hidden>
+            <fieldset>
+                <p id="messages"></p>
+                <label for="message">Enter your message:</label>
+                <input type = "text" id="message" name="message" placeholder="Enter a message" style="border-radius: 8px;"/>
+                <button type="submit" onclick="return sendMessage()" style= "
+                top:50%;
+                background-color:#0a0a23;
+                color: #fff;
+                border:none; 
+                border-radius:10px; 
+                padding:4px;
+                min-height:20px;
+                min-width: 60px;">send</button>
+            </fieldset>
+        </div> 
     </body>
 </html>
